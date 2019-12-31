@@ -6,7 +6,7 @@ from django.utils.deprecation import MiddlewareMixin
 
 class TimeMiddleware(MiddlewareMixin):
     def process_request(self,request):
-        print('---process_request---')
+        print('---process_request---zy')
         return
 
     def process_view(self,request,func,*args,**kwargs):

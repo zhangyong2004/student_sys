@@ -7,7 +7,7 @@ class StudentForm(forms.ModelForm):
     def clean_qq(self):
         cleaned_data = self.cleaned_data['qq']
         if not cleaned_data.isdigit():
-            raise forms.ValidationError('必须是数字！')
+            raise forms.ValidationError('必须是数字类型！')
 
         return int(cleaned_data)
 

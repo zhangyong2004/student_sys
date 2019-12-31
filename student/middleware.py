@@ -6,11 +6,11 @@ from django.utils.deprecation import MiddlewareMixin
 
 class TimeMiddleware(MiddlewareMixin):
     def process_request(self,request):
-        print('---process_request---zy')
+        print('---process_request---zhangyong')
         return
 
     def process_view(self,request,func,*args,**kwargs):
-        print('---process_view---')
+        print('---process_view---zhangyong')
         start = time.time()
         response = func(request) #调用视图合成的方法
         costed_time = time.time() - start
